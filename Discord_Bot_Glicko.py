@@ -65,6 +65,7 @@ class Discord_Bot_Glicko(commands.Bot):
         async def get_result(ctx):
             try:    
                 msg = re.sub(r"![^ ]* (.*)", r"\1", ctx.message.content)
+                msg = msg.replace(":"," ").replace("-"," ")
                 cmds = msg.split()
                 guilds, scores = [a for a in cmds if not a.isdigit()], [int(a) for a in cmds if a.isdigit()]
                 if len(guilds) != 2 or len(scores) != 2: raise DiscordInputError
