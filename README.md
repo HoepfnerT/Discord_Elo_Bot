@@ -1,7 +1,7 @@
 # Discord_Elo_Bot
 A discord bot implementing a Glicko / Elo rating system
 
-#Before running
+## Before running
 1. Edit the ".env" file:
 - Insert folder location
 - Insert discord bot ID
@@ -13,13 +13,13 @@ A discord bot implementing a Glicko / Elo rating system
 
 Then run "Discord_Leaderboards.py"
 
-#How to use
+## How to use
 - Players can sign up in channels listed at least in ".auth"->"channel"->"1" using the "!add PlayerName" command
 - Players can report scores using the "!report PlayerA ScoreA ScoreB PlayerB" command
 - Players can see the current leaderboards using the "!ranking" command or a predicted leaderboard for the next rating period using the "!live" command (players with too few games in total or to few recent games are suppressed)
 - Admins can end a rating period using the "!commit" command
 
-#Commands
+## Commands
 1. Unrestricted Commands
 - "!ranking": show the current official rating
 - "!live": show the prediction for the ranking of the next rating period
