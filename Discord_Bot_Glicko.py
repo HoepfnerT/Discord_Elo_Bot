@@ -141,7 +141,7 @@ class Discord_Bot_Glicko(commands.Bot):
 
         @self.command(aliases=[])
         async def clear_results(ctx):
-            if self.verifier.verify_ctx(ctx) < _VERIFIED: 
+            if self.verifier.verify_ctx(ctx) < _ADMIN: 
                 await ctx.message.add_reaction(_REACT_DENY)
                 return
             self.leaderboard_handler.clear_results()
