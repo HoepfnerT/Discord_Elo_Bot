@@ -1,5 +1,5 @@
 # Discord_Elo_Bot
-A discord bot implementing a Glicko / Elo rating system
+A discord bot implementing a Glicko / Elo rating system based on the python implementation of the Glicko2 system by Ryan Kirkman.
 
 ## Before running
 1. Edit the ".env" file:
