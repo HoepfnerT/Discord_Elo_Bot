@@ -373,3 +373,6 @@ MigrationBackup/
 FodyWeavers.xsd
 .auth
 .env
+.auth
+.env
+.log
